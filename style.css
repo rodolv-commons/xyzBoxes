@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxes-container {
+    margin: 0 auto;
+    width: 950px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    height: 100px;
+    margin: 50px;
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    line-height: 100px;
+    flex: 0 0 100px;
+}
