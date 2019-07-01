@@ -5,7 +5,7 @@
 }
 
 .boxes-container {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 950px;
     background-color: blueviolet;
     display: flex;
