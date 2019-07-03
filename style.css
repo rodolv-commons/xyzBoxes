@@ -24,23 +24,29 @@
     flex: 0 0 150px;
 }
 
-.box-animation {
-    margin: 0 auto;
-    margin-top: 400px;
-    height: 300px;
-    width: 300px;
-    font-size: 100px;
+
+.modal-container {
     text-align: center;
     font-family: monospace;
+    font-size: 100px;
     line-height: 280px;
-    opacity: 0;
-    transition: margin-top 1s, opacity 1s;
+    position: fixed;
+    width: 100%;
 }
 
-.box-animation-transition {
+.modal {
     margin: 0 auto;
-    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    position: relative;
+    top: 350px;
+}
+
+.modal-animated {
     opacity: 1;
+    top: 0;
 } 
 
 @media (max-width: 1024px) {

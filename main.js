@@ -2,7 +2,7 @@
     
     let letters = document.querySelectorAll('.box-content');
     let boxes = document.querySelectorAll('.box');
-    let boxAnim = document.querySelector('.box-animation');
+    let boxAnim = document.querySelector('.modal');
 
     // adding event listener to the boxes in order to show for 1.5 second
     // a box with the corresponding letter which appears coming from the bottom of the page and then desappears:
@@ -11,9 +11,9 @@
             boxAnim.innerHTML = letters[i].innerHTML;
             boxAnim.style.color = letters[i].style.color;
             boxAnim.style.backgroundColor = boxes[i].style.backgroundColor;
-            boxAnim.classList.add('box-animation-transition');
+            boxAnim.classList.add('modal-animated');
             setTimeout(function() {
-                boxAnim.classList.remove('box-animation-transition');
+                boxAnim.classList.remove('modal-animated');
             }, 1500);
         });
     }    
