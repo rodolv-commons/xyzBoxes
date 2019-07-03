@@ -4,22 +4,19 @@
     let boxes = document.querySelectorAll('.box');
     let boxAnim = document.querySelector('.box-animation');
 
-    // adding event listener to the boxes in order to show 
-    // a box with the corresponding letter which appears coming from the bottom of the page:
+    // adding event listener to the boxes in order to show for 1.5 second
+    // a box with the corresponding letter which appears coming from the bottom of the page and then desappears:
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].addEventListener('click', function() {
             boxAnim.innerHTML = letters[i].innerHTML;
             boxAnim.style.color = letters[i].style.color;
             boxAnim.style.backgroundColor = boxes[i].style.backgroundColor;
             boxAnim.classList.add('box-animation-transition');
+            setTimeout(function() {
+                boxAnim.classList.remove('box-animation-transition');
+            }, 1500);
         });
-    }
-
-    // adding event listener to the boxAnim in order to make the box desappear if clicked 
-    boxAnim.addEventListener('click', function() {
-        boxAnim.classList.remove('box-animation-transition');
-    })
-    
+    }    
 
     /**
      * setting a random color both for the letters and for the boxes background
