@@ -6,7 +6,8 @@
 
 .boxes-container {
     margin: 50px auto;
-    width: 950px;
+    margin-bottom: 0px;
+    width: 1000px;
     background-color: blueviolet;
     display: flex;
     flex-wrap: wrap;
@@ -14,11 +15,57 @@
 }
 
 .box {
-    height: 100px;
+    height: 150px;
     margin: 50px;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     font-family: monospace;
-    line-height: 100px;
-    flex: 0 0 100px;
+    line-height: 150px;
+    flex: 0 0 150px;
+}
+
+.box-animation {
+    margin: 0 auto;
+    margin-top: 400px;
+    height: 300px;
+    width: 300px;
+    font-size: 100px;
+    text-align: center;
+    font-family: monospace;
+    line-height: 280px;
+    opacity: 0;
+    transition: margin-top 1s, opacity 1s;
+}
+
+.box-animation-transition {
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 1;
+} 
+
+@media (max-width: 1024px) {
+    .boxes-container {
+        width: 90%;
+    }
+
+    .box {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .box {
+        margin: 5px;
+        font-size: 40px;
+        height: 120px;
+        flex: 0 0 120px;
+        line-height: 120px;
+    }
+
+    .box-animation {
+        height: 200px;
+        width: 200px;
+        font-size: 70px;
+        line-height: 200px;
+    }
 }
