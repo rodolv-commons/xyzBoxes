@@ -22,3 +22,22 @@
     line-height: 100px;
     flex: 0 0 100px;
 }
+
+.box-animation {
+    margin: 0 auto;
+    margin-top: 400px;
+    height: 300px;
+    width: 300px;
+    font-size: 100px;
+    text-align: center;
+    font-family: monospace;
+    line-height: 280px;
+    opacity: 0;
+    transition: margin-top 1s, opacity 1s;
+}
+
+.box-animation-transition {
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 1;
+} 
